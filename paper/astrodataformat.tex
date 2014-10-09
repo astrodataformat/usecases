@@ -1,0 +1,344 @@
+%% This is file `elsarticle-template-2-harv.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with harvard style bibliographic references
+%%
+%% $Id: elsarticle-template-2-harv.tex 155 2009-10-08 05:35:05Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-2-harv.tex $
+%%
+
+%%\documentclass[preprint,authoryear,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+
+%% Astronomy & Computing uses 5p
+%% \documentclass[final,authoryear,5p,times]{elsarticle}
+\documentclass[final,authoryear,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+% \usepackage{amssymb}
+\usepackage{gensymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+\usepackage[pdftex,pdfpagemode={UseOutlines},bookmarks,bookmarksopen,colorlinks,linkcolor={blue},citecolor={green},urlcolor={red}]{hyperref}
+% \usepackage{hypernat}
+
+\usepackage{breakurl}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon (default)
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   authoryear - selects author-year citations (default)
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%   longnamesfirst  -  makes first citation full author list
+%%
+%% \biboptions{longnamesfirst,comma}
+
+% \biboptions{}
+
+\journal{Astronomy \& Computing}
+
+%% Upright single quotes in verbatim fields make FITS header examples
+%% much more readable
+\usepackage{upquote}
+
+%% For draft use color package to indicate open questions that need
+%% clarification
+\usepackage{color}
+
+%\defcitealias{2014Jenness}{Paper~II}
+%\defcitealias{2014Kitaeff}{Paper~III}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Some Initial Requirements for Modern Astronomical Data Formats}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author[noao]{Brian~Thomas\corref{cor1}}
+\ead{bthomas@noao.edu}
+\author[cornell]{Tim~Jenness}
+%\author[noao]{Frossie~Economou}
+%\author[stsci]{Perry~Greenfield}
+%\author[geminin]{Paul~Hirst}
+%\author[jac]{David~S.~Berry}
+%\author[stsci]{Erik~Bray}
+%\author[glasgow]{Norman~Gray}
+%\author[ohio]{Demitri~Muna}
+%\author[geminis]{James~Turner}
+%\author[princeton]{Miguel~de~Val-Borro}
+%\author[iaa,ska]{Juande~Santander-Vela}
+%\author[ipac]{David~Shupe}
+%\author[ipac]{John~Good}
+%\author[ipac]{G.~Bruce~Berriman}
+%\author[icrar]{Slava~Kitaeff}
+%\author[microsoft]{Jonathan~Fay}
+%\author[sao]{Omar~Laurino}
+%\author[ipac]{Walter~Landry}
+%\author[nrao]{Joe~Masters}
+%\author[cornell]{Adam~Brazier}
+%\author[aifa]{Reinhold~Schaaf}
+%\author[uwaterloo]{Kevin~Edwards}
+%\author[jac]{Russell~O.~Redman}
+%\author[warwick]{Thomas~R.~Marsh}
+%\author[aip]{Ole~Streicher}
+%\author[noao]{Pat~Norris}
+%\author[ucm]{Sergio~Pascual}
+%\author[unsw]{Matthew~Davie}
+%\author[stsci]{Michael~Droettboom}
+%\author[mpia]{Thomas~Robitaille}
+%\author[iasf]{Riccardo~Campana}
+%\author[psu]{Alex~Hagen}
+%\author[mps]{Paul~Hartogh}
+%\author[aifa]{Dominik~Klaes}
+%\author[msum]{Matthew~W.~Craig}
+%\author[cral]{Derek~Homeier}
+
+%\cortext[cor1]{Corresponding author}
+
+\address[noao]{Science Data Management, National Optical Astronomy Observatory, 950 N Cherry Ave, Tucson, AZ 85719, USA}
+\address[cornell]{Department of Astronomy, Cornell University, Ithaca, NY 14853, USA}
+%\address[stsci]{Space Telescope Science Institute, 3700 San Martin Drive, Baltimore, MD 21218, USA}
+%\address[geminin]{Gemini Observatory, 670 N.\ A`oh\=ok\=u Place, Hilo, HI 96720, USA}
+%\address[jac]{Joint Astronomy Centre, 660 N.\ A`oh\=ok\=u Place, Hilo, HI 96720, USA}
+%\address[glasgow]{SUPA School of Physics \& Astronomy, University of Glasgow, Glasgow, G12 8QQ, UK}
+%\address[ohio]{Department of Astronomy, The Ohio State University, Columbus, OH 43210, USA}
+%\address[geminis]{Gemini Observatory, Casilla 603, La Serena, Chile}
+%\address[princeton]{Department of Astrophysical Sciences, Princeton University, Princeton, NJ 08544, USA}
+%\address[iaa]{Instituto de Astrof\'isica de Andaluc\'ia, Glorieta de la Astronom\'ia s/n, E-18008, Granada, Spain}
+%\address[ska]{Square Kilometre Array Organisation, Jodrell Bank Observatory, Lower Withington, Macclesfield SK11~9DL, UK}
+%\address[ipac]{Infrared Processing and Analysis Center, Caltech, Pasadena, CA 91125, USA}
+%\address[icrar]{International Centre for Radio Astronomy Research, M468, 35 Stirling Hwy, Crawley, Perth WA 6009, Australia}
+%\address[microsoft]{Microsoft Research, 14820 NE 36th Street, Redmond, WA 98052, USA}
+%\address[sao]{Smithsonian Astrophysical Observatory, 60 Garden Street, Cambridge, MA 02138, USA}
+%\address[nrao]{National Radio Astronomy Observatory, 520 Edgemont Road, Charlottesville, VA 22903, USA}
+%\address[aifa]{Argelander-Institut f\"{u}r Astronomie, Universit\"{a}t Bonn, Auf dem H\"{u}gel 71, 53121 Bonn, Germany}
+%\address[uwaterloo]{Department of Physics, University of Waterloo, Waterloo, ON N2L~3G1, Canada}
+%\address[warwick]{Department of Physics, University of Warwick, Coventry CV4 7AL, UK}
+%\address[aip]{Leibniz-Institut für Astrophysik Potsdam (AIP), An der Sternwarte 16, 14482 Potsdam, Germany}
+%\address[ucm]{Departamento de Astrof\'{i}sica, Universidad Complutense de Madrid, 28040, Madrid, Spain}
+%\address[unsw]{Department of Astrophysics, School of Physics, University of New South Wales, Sydney, NSW 2052, Australia}
+%\address[mpia]{Max-Planck-Institut f\"{u}r Astronomie, K\"{o}nigstuhl 17, 69117 Heidelberg, Germany}
+%\address[iasf]{Institute for Space Astrophysics and Cosmic Physics, Via Piero Gobetti 101, Bologna, I-40129, Italy}
+%\address[psu]{Dept.\ of Astronomy and Astrophysics, The Pennsylvania State University, 525 Davey Lab, University Park, PA 16802, USA}
+%\address[mps]{Max-Planck-Institut f\"{u}r Sonnensystemforschung, Justus-von-Liebig-Weg 3, 37077 G\"{o}ttingen, Germany}
+%\address[msum]{Department of Physics and Astronomy, Minnesota State University Moorhead, 1104 7th Ave. S., Moorhead, MN 56563, USA}
+%\address[cral]{Centre de Recherche Astrophysique de Lyon, UMR 5574, CNRS, Universit\'{e} de Lyon, ENS Lyon, %% \'{E}cole Normale Sup\'{e}rieure de Lyon, 46 All\'{e}e d'Italie, 69364 Lyon Cedex 07, France}
+
+\begin{abstract}
+%% Text of abstract
+
+In paper1 we pointed out that 
+the Flexible Image Transport System (FITS) standard, while a useful and
+reliable shared dataformat in astronomy, is showing its age.
+The format is limited in handling a subset of existing needs in the community.
+Some example limitations include the need to handle an expanded range of 
+specialized data product types (data models), being more conducive to the 
+networked exchange and storage of data, handling very large datasets, and capturing
+significantly more complex metadata and data relationships.
+
+The community would suffer a very significant loss if we do not update our shared
+standard to handle these limitations. Towards this end, lhis paper attempts to 
+capture requirements from a broad sampling of the astronomical community for 
+shared astronomical data formats. 
+
+In this paper we consider the requirements for "archive", "pipeline processing", 
+"instrument capture"
+and "application" data formats in astronomy.
+
+\end{abstract}
+
+\begin{keyword}%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+FITS \sep
+File formats \sep
+Standards
+\end{keyword}
+
+\end{frontmatter}
+
+% \linenumbers
+
+\newcommand{\aspconf}{ASP Conf.\ Ser}
+\newcommand{\aap}{A\&A}
+\newcommand{\aaps}{A\&AS}
+\newcommand{\jrasc}{JRASC}
+\newcommand{\qjras}{QJRAS}
+\newcommand{\mnras}{MNRAS}
+\newcommand{\pasp}{PASP}
+\newcommand{\pasa}{PASA}
+\newcommand{\apjs}{ApJS}
+
+%% main text
+\section{Introduction}
+
+\section{Process for capturing requirements}
+
+\section{Results}
+
+\section{Summary}
+
+\section{Acknowledgments}
+
+
+The authors wish to thank ...
+
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%%
+%%  \citet{key}  ==>>  Jones et al. (1990)
+%%  \citep{key}  ==>>  (Jones et al., 1990)
+%%
+%% Multiple citations as normal:
+%% \citep{key1,key2}         ==>> (Jones et al., 1990; Smith, 1989)
+%%                            or  (Jones et al., 1990, 1991)
+%%                            or  (Jones et al., 1990a,b)
+%% \cite{key} is the equivalent of \citet{key} in author-year mode
+%%
+%% Full author lists may be forced with \citet* or \citep*, e.g.
+%%   \citep*{key}            ==>> (Jones, Baker, and Williams, 1990)
+%%
+%% Optional notes as:
+%%   \citep[chap. 2]{key}    ==>> (Jones et al., 1990, chap. 2)
+%%   \citep[e.g.,][]{key}    ==>> (e.g., Jones et al., 1990)
+%%   \citep[see][pg. 34]{key}==>> (see Jones et al., 1990, pg. 34)
+%%  (Note: in standard LaTeX, only one note is allowed, after the ref.
+%%   Here, one note is like the standard, two make pre- and post-notes.)
+%%
+%%   \citealt{key}          ==>> Jones et al. 1990
+%%   \citealt*{key}         ==>> Jones, Baker, and Williams 1990
+%%   \citealp{key}          ==>> Jones et al., 1990
+%%   \citealp*{key}         ==>> Jones, Baker, and Williams, 1990
+%%
+%% Additional citation possibilities
+%%   \citeauthor{key}       ==>> Jones et al.
+%%   \citeauthor*{key}      ==>> Jones, Baker, and Williams
+%%   \citeyear{key}         ==>> 1990
+%%   \citeyearpar{key}      ==>> (1990)
+%%   \citetext{priv. comm.} ==>> (priv. comm.)
+%%   \citenum{key}          ==>> 11 [non-superscripted]
+%% Note: full author lists depends on whether the bib style supports them;
+%%       if not, the abbreviated list is printed even when full requested.
+%%
+%% For names like della Robbia at the start of a sentence, use
+%%   \Citet{dRob98}         ==>> Della Robbia (1998)
+%%   \Citep{dRob98}         ==>> (Della Robbia, 1998)
+%%   \Citeauthor{dRob98}    ==>> Della Robbia
+
+
+%% References with bibTeX database:
+
+\bibliographystyle{model2-names}
+\bibliography{astrodataformat}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model2-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have one of the following forms:
+%%   \bibitem[Jones et al.(1990)]{key}...
+%%   \bibitem[Jones et al.(1990)Jones, Baker, and Williams]{key}...
+%%   \bibitem[Jones et al., 1990]{key}...
+%%   \bibitem[\protect\citeauthoryear{Jones, Baker, and Williams}{Jones
+%%       et al.}{1990}]{key}...
+%%   \bibitem[\protect\citeauthoryear{Jones et al.}{1990}]{key}...
+%%   \bibitem[\protect\astroncite{Jones et al.}{1990}]{key}...
+%%   \bibitem[\protect\citename{Jones et al., }1990]{key}...
+%%   \harvarditem[Jones et al.]{Jones, Baker, and Williams}{1990}{key}...
+%%
+
+% \bibitem[ ()]{}
+
+% \end{thebibliography}
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-2-harv.tex'.
