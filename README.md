@@ -16,6 +16,7 @@ repository. These sites may respectively be found at:
 1. https://groups.google.com/forum/#!forum/astrodataformat
 2. https://github.com/astrodataformat
 
+All use cases are to be written on the associated wiki: https://github.com/astrodataformat/usecases/wiki
 
 # Member requirements
 
