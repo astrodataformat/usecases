@@ -24,14 +24,14 @@ Members will need to belong to the astrodataformat group. The group is
 open to any member of the astronomy community who wishes to participate.
 Along with belonging to this group, members are required, at minimum,
 to read the draft whitepaper to be submitted for publication and pass
-along any comments they may have. IF they agree to the content, then they
+along any comments they may have. **IF** they agree to the content, then they
 will be added as co-authors on the draft.
 
 Members are further encouraged to contribute use cases, extract requirements
 and provide wording for the draft. In this case, because we plan to
 utilize GitHub to hold these documents, members will need to obtain a GitHub
 account (see https://github.com/ for instructions on obtaining a free account).
-After the GitHub account is obtained, either Tim or Brian can then add the
+After the GitHub account is obtained, either @timj or @brianthomas can then add the
 member to the astrodataformat organization which will allow them permission
 to edit.
 
