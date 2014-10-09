@@ -1,4 +1,5 @@
-requirements
+Astrodataformat repository
 ============
 
-Paper 2 requirements 
+This repository holds materials for the astrodataformat group. 
+
