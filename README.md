@@ -8,10 +8,10 @@ This document describes the approach of the astrodataformat group
 toward creating a whitepaper which describes the requirements on modern
 astronomical data formats.
 
-We will have a structured process (described below) and utilize 2 sites
+We will have a structured process (described below) and utilize two sites
 to enable the work. All discussion is to be held on the astrodataformat
 Google group and all of the documents are kept on the astrodataformat
-repository. These sites may respectively be found at:
+repositories. These sites may respectively be found at:
 
 1. https://groups.google.com/forum/#!forum/astrodataformat
 2. https://github.com/astrodataformat
@@ -20,7 +20,7 @@ All use cases are to be written on the associated wiki: https://github.com/astro
 
 # Member requirements
 
-Members will need to belong to the astrodataformat group. The group is
+Members will need to belong to the astrodataformat google group. The group is
 open to any member of the astronomy community who wishes to participate.
 Along with belonging to this group, members are required, at minimum,
 to read the draft whitepaper to be submitted for publication and pass
@@ -44,7 +44,7 @@ to capture missed information/correct errors/issues.
 
 ## Capture Use Cases
 
-Member of the group will submit their use cases. There is no level of
+Members of the group will submit their use cases. There is no level of
 generality required. Use case scope may be set to any level of usage. Members
 should indicate ownership and work with other members to resolve commonalities,
 discrepancies and other issues in use cases.
