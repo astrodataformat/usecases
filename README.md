@@ -5,7 +5,7 @@ This repository is for discussion of Use Cases relating to the future
 of astronomy data formats.
 
 This document describes the approach of the astrodataformat group
-toward creating a whitepaper which describes the requirements on modern
+toward creating a white paper which describes the requirements on modern
 astronomical data formats.
 
 We will have a structured process (described below) and utilize two sites
@@ -23,14 +23,14 @@ All use cases are to be written on the associated wiki: https://github.com/astro
 Members will need to belong to the astrodataformat google group. The group is
 open to any member of the astronomy community who wishes to participate.
 Along with belonging to this group, members are required, at minimum,
-to read the draft whitepaper to be submitted for publication and pass
+to read the draft white paper to be submitted for publication and pass
 along any comments they may have. **IF** they agree to the content, then they
 will be added as co-authors on the draft.
 
 Members are further encouraged to contribute use cases, extract requirements
 and provide wording for the draft. In this case, because we plan to
 utilize GitHub to hold these documents, members will need to obtain a GitHub
-account (see https://github.com/ for instructions on obtaining a free account).
+account (see https://github.com/join for instructions on obtaining a free account).
 After the GitHub account is obtained, either @timj or @brianthomas can then add the
 member to the astrodataformat organization which will allow them permission
 to edit.
@@ -86,5 +86,5 @@ allowed to vote on relevance in the ranking stage and can vote down any requirem
 you feel are edge cases or irrelevant for most astronomers.
 
 2. No discussion of implementation or design of a new astronomical data format
-is allowed. Its OK to utilize existing or imagined data formats to help illustrate
+is allowed. It's OK to utilize existing or imagined data formats to help illustrate
 use cases.
